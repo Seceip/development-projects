@@ -1,0 +1,566 @@
+João Pedro Cavassini Basso // PROF, O EXERCICIO 6 É UM MINI-RPG ESPERO QUE GOSTE :)
+-Não fiz em grupo, fiz sozinho.
+
+1) Tabuada com estrutura de repet
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro n1, n2
+
+		faca {
+		
+			escreva("Olá, digite o número da tabuada que você deseja, maior que zero.")
+			leia(n1)
+			limpa()
+			
+			}
+		
+		enquanto (n1 <= 0)
+			para (n2 = 0; n2 <= 20; n2++)
+		
+		{
+			escreva(n1, "x", n2, "=", n1*n2 , "\n")
+		}
+	}
+}
+
+2)
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro operacaoSalario, filhos, somaFilhos, mediaFilhos, operacaoFilhos
+		real salario, somaSalario, mediaSalario, maiorSalario, percentual
+
+		somaSalario = 0.00
+		maiorSalario = 0.00
+		somaFilhos = 0
+		percentual = 0
+		
+		escreva("Olá prefeita Suzan, como a senhora é empenhada! Fiquei sabendo da sua nova pesquisa, deixa eu te ajudar.")
+		
+		faca {
+			escreva("\nDigite os salários da população. Lembre-se que 0 termina a operação.")
+			leia(salario)
+			somaSalario = somaSalario + salario
+			se(salario > maiorSalario e salario != 0 e salario < 0) 
+			{
+				maiorSalario = salario
+			}
+				senao
+					se(salario == 100 ou salario == 100.00) 
+					{
+						percentual = percentual++
+					}
+						senao
+						{
+							escreva("Digite um valor maior ou igual a zero por favor!")
+						}			
+		} enquanto(salario != 0)
+
+		escreva("\nQuantos salários você digitou no total prefeita?")
+		leia(operacaoSalario)
+		limpa()
+
+
+		faca {
+			escreva("\nDigite o número de filhos que cada casal possui.\n0 termina a operação.")
+			leia(filhos)
+			somaFilhos = somaFilhos + filhos
+
+			se(filhos < 0) 
+			{	
+				escreva("Digite um valor maior ou igual a zero por favor!")	
+			}
+		} enquanto(filhos != 0)
+
+		escreva("Quantos valores você digitou para os filhos?")
+		leia(operacaoFilhos)
+		limpa()
+		
+		mediaFilhos = somaFilhos / operacaoFilhos
+		mediaSalario = somaSalario / operacaoSalario
+		
+		escreva("A média de salários da população é de: ", mediaSalario, "R$", "\n E o maior salário é de: ", maiorSalario, "R$")
+		escreva("\n A média de filhos da população é de: ", mediaFilhos)
+		escreva("\nO percentual de pessoas com salário de R$100,00 é de: ", percentual,"%")
+	}
+}
+
+
+
+
+3)
+
+programa
+{
+	
+	funcao inicio()
+	{
+		real n1, n2, operacao
+		escreva("Professora! Que bom que você está aqui, vamos lá, fiquei sabendo que você precisa dividir dois números!")
+		escreva("\nOk, digite o primeiro número (Tô de olho se você botar 0 em, 0 é o único número que você não pode colocar.")
+		leia(n1)
+		limpa()
+		escreva("Olha olha em! Coloca o segundo por favor.")
+		leia(n2)
+
+		se (n1 != 0 e n2 != 0) 
+		{
+			operacao = n1 / n2
+			escreva("Seu resultado supremo é: ", operacao , " .")
+		}
+		senao faca
+		{
+			escreva("Prof Prof, não tenta burlar o sistema.")
+			escreva("Digita o primeiro número novamente.")
+			leia(n1)
+			limpa()
+			escreva("Digite o segundo número.")
+			leia(n2)
+		} enquanto(n1 == 0 ou n2 == 0)
+			operacao = n1 / n2
+			escreva("Seu resultado supremo é: ", operacao , " .")
+		}
+}
+
+
+4)
+
+programa
+{
+	
+	funcao inicio()
+	{
+
+		real numeroSoma, numeroUm
+		numeroSoma = 0
+		escreva("Olá Mundo Cruel")
+		escreva("\n Você sabia que os programas também se cansam não é?...")
+
+		faca 
+		{
+			escreva("\n\nDigite o número a ser somado! Lembre-se que o 0 termina a operação.")
+			leia(numeroUm)
+			numeroSoma = numeroSoma + numeroUm
+				se (numeroUm == 0) 
+				{
+					escreva("\nA soma de todos os valores foi: ", numeroSoma)
+				}
+		} enquanto (numeroUm != 0) 
+			
+	}
+}
+
+5)
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro n1, soma
+
+		soma = 0
+
+		faca 
+		{
+			escreva("Olá, irei te ajudar com um cálculo. \n Se você foi um aluno que usou menos que 10 vezes o restaurante, digite 1. \n Se você foi um aluno que usou mais que 10 até 15 vezes o restaurante, digite 2. \n Se você foi um aluno que usou mais de 15 vezes o restaurante, digite 3. \n Digite 0 para parar de somar.")
+			leia(n1)
+			limpa()
+			
+		escolha(n1) 
+		{
+			caso 1:
+				escreva("\n\nEste grupo de 10 alunos usaram até 10 vezes.")
+				soma = soma + n1
+			pare
+			caso 2:
+				escreva("\n\nEste grupo de 10 alunos usaram entre 10 vezes a 15 vezes.")
+				soma = soma + n1
+			pare
+			caso 3:
+				soma = soma + n1
+				escreva("\n\nEste grupo de 10 alunos mais que 15 vezes.")
+			pare
+		}
+		} enquanto(n1 != 0)
+
+		escreva("E a soma total foi de que ", soma , "grupos de dez pessoas usaram o restaurante")
+	}	
+}
+
+
+
+6)
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro operacao, continua
+
+		escreva("\nBem vinda ao RPG de Mesa de Hogwarts!")
+		escreva("\nDigite 1 para continuar, ou 0 para reiniciar!")
+		leia(continua)
+		limpa()
+			se(continua == 1) 
+			{
+				escreva("\n\n Bom, após a sua luta com o dragão, você tem que achar o tesouro né?.")
+				escreva("\n Eita, esqueci o meu percursor mágico lumos m-300! Você vai ter que nos guiar professora Suzan!")
+		
+				escreva("\n......* Som de coisas se rastejando e grunindo *........\n")
+		
+				escreva("\n -Tô com medo ;-; *diz um aluno*\n")
+			
+		escreva("SUZAN, VOCÊ TEME A MORTE? *Diz o Mestre*")
+		leia(continua)
+		limpa()
+			
+			se(continua == 1) 
+			{
+				escreva("\n Nunca duvidei de você professora!", "\n Agora que você conseguiu iluminar a caverna, já vimos que temos 8 passagens para atravessar! Qual é a certa?")
+			
+		escreva("\nPelo menos elas tem enumerações, do 1 ao 8, ficou mais fácil né prof?! \n\nEspera, Prof? \n PROFESSORA ESPERA POR MIM!! *alguns alunos começam a chorar com medo da morte*\n")
+		leia(continua)
+				
+			se(continua == 1) 
+			{
+				escreva("\nSuzan, O mestre te faz uma pergunta! Qual caminho você escolhe? \n(1) \t(2) \n(3) \t(4) \n(5) \t(6) \n(7) \t(8)\n")
+				leia(operacao)
+				limpa()
+			
+						//P1. P2, P3, P4, P5, P7, P8 SÃO AS QUE IRÃO NOS MATAR.
+						//P6 É A CORRETA.
+			se(operacao == 6) 
+			{
+				escreva("CONSEGUIMOS! O TESOURO É NOSSO!!!")
+			}
+			
+				senao
+					{
+					faca {
+							escreva("SUZAN, VOCÊ GUIOU TODOS PARA A MORTE, FIM DE JOGO!\n\n Brincadeirinhaaa! Você tem chance!")
+							escreva("\nSuzan, O mestre te faz uma pergunta! Qual caminho você escolhe? \n(1) \t(2) \n(3) \t(4) \n(5) \t(6) \n(7) \t(8)\n")
+							leia(operacao)
+							limpa()
+						} enquanto (operacao != 6) 
+							se(operacao == 6) 
+							{
+								escreva("CONSEGUIMOS! O TESOURO É NOSSO!!!")
+							}	
+					}
+				}
+			}
+		}
+	}
+					
+}
+
+7)
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro continua, operacao, qtdDM, qtdDH
+		real altH, altM, altSomaH, altSomaM, maiorAlt, menorAlt, mediaAltM, mediaAltT, mediaTotal
+
+		altSomaH = 0
+		altSomaM = 0
+		maiorAlt = 0
+		menorAlt = 0
+
+		
+		faca 
+		{
+			escreva("Olá, digite (1) para calcular a altura dos homens, ou (2) para a altura das mulheres!")
+			leia(operacao)
+
+			se(operacao == 1) 
+			{
+				faca
+				{
+					escreva("Digite a altura desejada para o cálculo masculino! Digite 0 para parar.")
+					leia(altH)
+					altSomaH = altSomaH + altH
+						se(altH > maiorAlt e altH != 0) 
+						{
+							maiorAlt = altH
+						}
+						senao
+							se(altH < maiorAlt e altH != 0)
+							{
+								menorAlt = altH
+							}
+				} enquanto(altH != 0)	
+			}
+			senao
+				se(operacao == 2) 
+				{
+					faca
+					{
+						escreva("Digite a altura desejada para o cálculo feminino! Digite 0 para parar.")
+						leia(altM)
+						altSomaM = altSomaM + altM
+							se(altM > maiorAlt e altM != 0) 
+							{
+								maiorAlt = altM
+							}
+							senao
+								se(altM < maiorAlt e altM != 0)
+								{
+									menorAlt = altM
+								}
+					} enquanto(altM != 0)
+				}
+			
+			escreva("Por fim, digite 0 se deseja fazer o cálculo, ou continue digitando (1) ou (2) para calcular mais alturas!")
+			leia(continua)
+		} enquanto(continua != 0)
+
+		escreva("Quantas vezes você digitou a altura dos homens?")
+		leia(qtdDH)
+
+		escreva("\nE quantas vezes você digitou a altura das mulheres?")
+		leia(qtdDM)
+
+		limpa()
+
+		
+		mediaTotal = qtdDH + qtdDM
+		mediaAltT = (altSomaM + altSomaH) / mediaTotal
+		mediaAltM = altSomaM / qtdDM
+
+		
+		
+		escreva("A altura média das mulheres somando todas foi de: ", mediaAltM,"m", "\nA média total da turma foi de: ", mediaAltT,"m")
+		escreva("\nA maior altura da turma foi: ", maiorAlt, "m", "\nA menor altura da turma foi: ", menorAlt, "m")
+
+	}
+}
+
+
+8)
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro h, m, hSuperior, mSuperior, fTotal
+		real salarioH, salarioM, salarioHB, salarioMB, descontoH, descontoM, restoH, restoM, percaTotal
+
+		faca 
+		{
+			escreva("\nDigite a quantidade de homens da empresa.")
+			leia(h)
+
+			escreva("Digite a quantidade de mulheres da empresa.")
+			leia(m)
+			limpa()
+
+			escreva("Por favor, insira a quantidade certa de funcionários, que é 30!")
+			fTotal = h + m
+			limpa()
+			
+		} enquanto (fTotal !=30)
+
+		escreva("Quantos funcionários do sexo masculino tem um tempo de casa superior à 15 anos?")
+		leia(hSuperior)
+
+		escreva("Quantas funcionárias do sexo feminino tem um tempo de casa superior à 10 anos?")
+		leia(mSuperior)
+		limpa()
+
+		h = h - hSuperior
+		m = m - mSuperior
+
+		escreva("Qual é o salário médio dos homens da empresa?")
+		leia(salarioH)
+
+		escreva("Qual é o salário médio das mulheres da empresa?")
+		leia(salarioM)
+
+		limpa()
+
+		salarioHB = salarioH / hSuperior
+		salarioMB = salarioM / mSuperior
+
+		descontoH = salarioHB * (20 / 100)
+		descontoM = salarioMB * (25 / 100)
+
+		restoH = h * 5000.00
+		restoM = m * 5000.00
+
+		percaTotal = restoH + restoM + descontoH + descontoM
+		
+		escreva("\nOs funcionários homens com tempo de casa superior a 15 anos são: ", hSuperior, "\nE o tempo de casa das funcionárias mulheres com tempo de casa superior a 10 anos são de: ", mSuperior, "\nO total de funcionários restantes foi \nH: ", h, "\tM:", m)
+		escreva("\n\nO valor creditado aos funcionários homens com tempo superior a 15 anos é de: ", descontoH,"R$", "\nE das funcionárias mulheres com tempo superior a 10 anos é de: ", descontoM,"R$")
+		escreva("\n\nO total de dinheiro perdido da empresa é de: ", percaTotal, "R$")
+		// prof eu não entendi o que está errado.
+	}
+}
+
+
+9)
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro c1, c2, c3, c4, operacao, nulo, branco
+
+		c1 = 0
+		c2 = 0
+		c3 = 0
+		c4 = 0
+		nulo = 0
+		branco = 0
+		
+		escreva("Olá, você está votando em um candidato, considere que: \n\n")
+
+		faca 
+		{
+		escreva("\nCleitin do Pneu (1) \tShaolin Matador de Porco (2) \nRobson Arco-íris (3) \tAlce Barbáro (4) \nPara voto nulo digite (5) \tPara voto em branco digite (6) \nDigite (0) para parar de votar.")
+		leia(operacao)
+		limpa()
+
+		escolha (operacao)
+		{
+			caso 1:
+				escreva("\nVocê votou no Cleitin do Pneu! Aguarde a contagem de votos...")
+				c1 = c1 ++
+			pare
+			caso 2:
+				escreva("\nVocê votou no Shaolin Matador de Porco! Aguarde a contagem de votos...")
+				limpa()
+				c2 = c2 ++
+			pare
+			caso 3:
+				escreva("\nVocê votou no Robson Arco-íris! Aguarde a contagem de votos...")
+				limpa()
+				c3 = c3 ++
+			pare
+			caso 4:
+				escreva("\nVocê votou no Alce Bárbaro! Aguarde a contagem de votos...")
+				limpa()
+				c4 = c4 ++
+			pare
+			caso 5:
+				escreva("\nVocê votou nulo :(")
+				limpa()
+				nulo = nulo ++
+			pare
+			caso 6:
+				escreva("\nVocê votou em branco, seu voto será direcionado ao candidato com menos pontos! Aguarde a contagem de votos...")
+				limpa()
+				branco = branco ++
+		}
+		
+		} enquanto(operacao != 0)
+
+		se (c1 > c2 e c1 > c3 e c1> c4)
+		{
+			escreva("\nO candidato Cleitin do Pneu ganhou a votação! com: ", c1)
+			escreva("Os outros candidatos ficaram com: \nShaolin: ", c2, "\t Robson: ", c3, "\nAlce: ", c4)
+			escreva("Os votos em branco foram: ", branco)
+			escreva("Os votos em nulo foram: ", nulo)
+		} 
+		senao
+			se (c2 > c1 e c2 > c3 e c2> c4)
+			{
+				escreva("\nO candidato Shaolin Matador de Porco ganhou a votação! com: ", c2)
+				escreva("Os outros candidatos ficaram com: \nCleitin: ", c1, "\t Robson: ", c3, "\nAlce: ", c4)
+				escreva("Os votos em branco foram: ", branco)
+				escreva("Os votos em nulo foram: ", nulo)
+			} 
+			senao
+				se (c3 > c1 e c3 > c2 e c3> c4)
+				{
+					escreva("\nO candidato Robson do Arco-Íris ganhou a votação! com: ", c3)
+					escreva("Os outros candidatos ficaram com: \nCleitin: ", c1, "\tShaolin: ", c2, "\nAlce: ", c4)
+					escreva("Os votos em branco foram: ", branco)
+					escreva("Os votos em nulo foram: ", nulo)
+				} 
+				senao
+					se (c4 > c1 e c4 > c2 e c4> c3)
+					{
+						escreva("\nO candidato Alce Bárbaro ganhou a votação! com: ", c4)
+						escreva("Os outros candidatos ficaram com: \nCleitin: ", c1, "\tShaolin: ", c2, "\nRobson: ", c3)
+						escreva("Os votos em branco foram: ", branco)
+						escreva("Os votos em nulo foram: ", nulo)
+					}
+	}
+}
+
+
+10) Fiz um algoritimo onde o usuário escolhe a operação, caso ele não escolha nenhuma operação, acontece uma operação especial de subtração dos números inseridos pelo usuário! (acredito que cumpri com o enunciado, fazendo duas estruturas de escolha, uma no inicio, outra no final. Utilizei Caso e Enquanto)
+
+programa
+{
+	
+	funcao inicio()
+	{
+		real numeroUm, numeroMenos, n1, n2, resultadoCaso
+		inteiro operacao
+		numeroMenos = 0
+		
+		escreva("Neste exercicio, nós vamos fazer duas operações ou mais em um algoritimo!")
+		
+		escreva("\nDigite o primeiro número!")
+		leia(n1)
+		limpa()
+		
+		escreva("Digite o segundo número!")
+		leia(n2)
+		limpa()
+
+		escreva("\nDigite o tipo de operação que você deseja fazer: \nSoma = 1 \tSubtração = 2 \nDivisão = 3 \tMultiplicação = 4 \n Ou digite qualquer outro número para uma operação especial!")
+		leia(operacao)
+
+		escolha (operacao) 
+		{
+			caso 1:
+				resultadoCaso = n1 + n2
+				escreva("Você escolheu somar, o resultado é: ", resultadoCaso)
+			pare
+			
+			caso 2:
+				resultadoCaso = n1 - n2
+				escreva("Você escolheu subtrair, o resultado é:", resultadoCaso)
+			pare
+			
+			caso 3:
+				resultadoCaso = n1 / n2
+				escreva("Você escolheu dividir, o resultado é:", resultadoCaso)
+			pare
+			
+			caso 4:
+				resultadoCaso = n1 * n2
+				escreva("Você escolheu multiplicar, o resultado é:", resultadoCaso)
+			pare
+				caso contrario: 
+			faca 
+			{
+			escreva("\n\nDigite os números que você deseja! Lembre-se que o 0 termina a operação.")
+			leia(numeroUm)
+			numeroMenos = numeroMenos - numeroUm
+				se (numeroUm == 0) 
+				{
+					escreva("\nA subtração de todos os valores foi: ", numeroMenos)
+				}
+			} enquanto (numeroUm != 0) 
+		}
+	}
+}
+
+
