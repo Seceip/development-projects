@@ -1,0 +1,115 @@
+1)
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro i 
+		para (i = 50;i<=250;i=i+1)
+		{
+			escreva (i,"\n")
+		}
+	}
+}
+
+2)
+
+3)
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro i
+
+		para(i=29; i>=1; i--)
+		{
+			se(i%2!=0)
+			escreva(i, "\n")
+			
+		}
+	}
+}
+
+4)
+
+5)
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro x , i, fat=1
+		escreva("Digite um valor para calcular o fatorial:\n")
+		leia(x)
+		para (i=x;i>0;i--)
+		{
+			fat=fat*i
+		}
+		escreva ("\n*******************************")
+		escreva ("\n",x,"! = ")
+		escreva (fat)
+		
+	}
+}
+
+6)
+
+7)
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro n1, n2, i
+		real y=0
+		escreva ("Digite dois números (Início e Fim): \n")
+		leia (n1,n2)
+		para (i=n1;i<=n2;i++)
+		{
+			y=y+i
+		}
+		escreva ("\n*****************************************")
+		escreva ("\nA média dos números entre a faixa dada é: ")
+		escreva (y/(n2-n1+1))
+	}
+}
+
+8)
+
+9)
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro qtdNegativo = 0, operacao
+		real k[10000000]
+		
+		escreva("Olá, informe quantas vezes você quer digitar os valores.")
+		leia(operacao)
+		
+			para(inteiro x = 0; x < operacao; x++)
+			{
+				escreva("\nInforme os valores.")
+				leia(k[x])
+				se(k[x] < 0)
+				{
+					qtdNegativo++
+				}
+			}
+		limpa()
+
+		escreva("A quantidade de n° negativos digitados é de: ", qtdNegativo)
+	}
+}
+
+
+10)
+
+11)
