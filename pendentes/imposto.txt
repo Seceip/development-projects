@@ -1,0 +1,45 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro operacao, qtde, somaQtd
+		real valor, somaValor, impostoTotal
+		cadeia desc
+
+		somaValor = 0.00
+		somaQtd = 0
+		
+		escreva("Olá, digite 1 para calcular mais produtos, ou 0 para parar a solicitação e fazer o cálculo final.")
+		leia(operacao)
+		
+		faca 
+		{	
+			escreva("Digite o nome do produto.")
+			leia(desc)
+	
+	
+			escreva("\nDigite a quantidade do mesmo produto.")
+			leia(qtde)
+			somaQtd = somaQtd + qtde
+	
+			
+			escreva("\nDigite o valor do produto.")
+			leia(valor)
+			valor = valor * qtde
+			somaValor = somaValor + valor
+			
+			limpa()
+	
+			escreva("O produto registrado foi: ", desc, "\nValor de: ", valor,"R$","\nQuantidade: ", qtde)
+			escreva("\nDigite 1 para continuar somando, 0 para parar.")
+			leia(operacao)
+			
+		} enquanto(operacao != 0)
+		
+		limpa()
+		impostoTotal = somaValor + (somaValor * 0.05)
+		escreva("Você parou de registrar produtos!")
+		escreva("\nA quantidade total de produtos foi de: ", somaQtd, "\nO valor total dos produtos com imposto foi de: ", impostoTotal,"R$")
+	}
+}
