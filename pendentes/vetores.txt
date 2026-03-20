@@ -1,0 +1,211 @@
+6.
+programa
+{
+	
+	funcao inicio()
+	{
+		real temperaturaC[25], temperaturaF[25]
+
+		para(inteiro c=0; c<=24; c++)
+		{
+			escreva("Digite a temperatura em Celcius da posição: ", c, "°\n")
+			leia(temperaturaC[c])
+			temperaturaF[c] = (temperaturaC[c] * 9/5) + 32
+		}
+
+		escreva("A temperatura em Celsius apresentadas foram: \n")
+		
+		para(inteiro c=0; c<=24; c++) 
+		{
+			escreva(temperaturaC[c], "|")
+		}
+		
+		escreva("\nA temperatura em Fahrenheit convertidas foram: \n")
+			
+		para(inteiro c=0; c<=24; c++)
+		{
+			escreva(temperaturaF[c], "|")
+		}
+	}
+}
+
+7.
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro vA[12], vB[12]
+
+		para(inteiro c=0; c<=11; c++)
+		{
+			escreva("Digite o número da posição: ", c, "°\n")
+			leia(vA[c])
+
+			se(vA[c] % 2 == 1)
+			{
+					vB[c] = vA[c] * 2
+			}
+			
+			senao
+			{
+					vA[c] = vA[c]
+			}
+		}
+
+		escreva("\nVetor A:")
+		
+		para(inteiro c=0; c<=11; c++)
+		{
+			escreva(vA[c], "|")
+		}
+
+		escreva("\nVetor B:")
+		para(inteiro c=0; c<=11; c++)
+		{
+			escreva(vB[c], "|")
+		}
+	}
+}
+
+8.
+
+programa
+{
+	
+inclua biblioteca Util
+	funcao inicio()
+	{
+		inteiro v1[6], v2[6]
+
+		escreva("Digite 6 números que você acha que será sorteado: \n")
+		
+		para(inteiro c=0; c<=5; c++)
+		{
+			escreva(c, "° |")
+			leia(v1[c])
+		}
+
+		para(inteiro c=0; c<=5; c++)
+		{
+			v2[0] = Util.sorteia(1, 60)
+			v2[1] = Util.sorteia(1, 60)
+			v2[2] = Util.sorteia(1, 60)
+			v2[3] = Util.sorteia(1, 60)
+			v2[4] = Util.sorteia(1, 60)
+			v2[5] = Util.sorteia(1, 60)
+		}
+			
+		escreva("A tabela sorteada é: ", v2[0], "|",v2[1], "|",v2[2], "|",v2[3], "|",v2[4], "|",v2[5])
+		escreva("\nA sua tabela é: ", v1[0], "|",v1[1], "|",v1[2], "|",v1[3], "|",v1[4], "|",v1[5])
+	}
+}
+
+9.
+
+
+
+10.
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro vet[10], valor=0
+
+		para(inteiro c=0; c<=9; c++)
+		{
+			escreva(c, "°")
+			leia(vet[c])
+		}
+
+		para(inteiro i = valor; i < 9; i++)
+		{
+			para(inteiro j = 0; j < 9; j++)
+			{
+				se(i != j)
+				{
+					se(vet[i] == vet[j])
+					{
+						escreva("\nValor repetido: ",vet[i], "\nno indice ", i)
+					}
+				}
+			}
+		}
+					
+	}
+}
+
+
+11.
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro vA[6], vB[6], vC[6], vD[6]
+
+		
+		para(inteiro c=0; c<=5; c++)
+		{
+			escreva("Digite o número da posição: ", c, "°\n")
+			leia(vA[c])
+
+			se(vA[c] % 2 == 1)
+			{
+					vC[c] = vA[c]
+			}
+			
+			senao
+			{
+					vD[c] = vA[c]
+			}
+		}
+
+		para(inteiro c=0; c<=5; c++)
+		{
+			escreva("Digite o número da posição: ", c, "°\n")
+			leia(vB[c])
+
+			se(vB[c] % 2 == 1)
+			{
+					vC[c] = vB[c]
+			}
+			
+			senao
+			{
+					vD[c] = vB[c]
+			}
+		}
+
+		escreva("\nVetor A:")
+		
+		para(inteiro c=0; c<=5; c++)
+		{
+			escreva(vA[c], "|")
+		}
+
+		escreva("\nVetor B:")
+		para(inteiro c=0; c<=5; c++)
+		{
+			escreva(vB[c], "|")
+		}
+
+		escreva("\nVetor C:")
+		para(inteiro c=0; c<=5; c++)
+		{
+			escreva(vC[c], "|")
+		}
+
+		escreva("\nVetor D:")
+		para(inteiro c=0; c<=5; c++)
+		{
+			escreva(vD[c], "|")
+		}
+	}
+}
+
+
