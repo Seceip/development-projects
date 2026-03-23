@@ -1,0 +1,71 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro cA,cB,cC
+		
+		escreva("Olá, bem-vindo a votação.")
+		escreva("\nTemos três candidatos: A, B e C.")
+		escreva("\nDigite a quantidade de votos para o candidato A")
+		leia(cA)
+
+		escreva("\nDigite a quantidade de votos para o candidato B")
+		leia(cB)
+
+		escreva("\nDigite a quantidade de votos para o candidato C")
+		leia(cC)
+
+		para(inteiro votos = 0; votos == cA; votos++)
+		{
+			escreva("\nForam registrados: ", votos, " votos para o candidato A.")
+		}
+
+		para(inteiro votos = 0; votos <= cB; votos++)
+		{
+			escreva("\nForam registrados: ", votos, " votos para o candidato B.")
+		}
+
+		para(inteiro votos = 0; votos <= cC; votos++)
+		{
+			escreva("\nForam registrados: ", votos, " votos para o candidato C.")
+		}
+
+		limpa()
+		
+		se(cA + cB + cC == 50) 
+		{
+			se(cA > cB e cA > cC) 
+			{
+				escreva("O candidato A ganhou a eleição com: ", cA, " votos!")
+			}
+			senao
+				se(cB > cA e cB > cC)
+				{
+					escreva("O candidato B ganhou a eleição com: ", cB, " votos!")
+				}
+				senao
+					se(cC > cA e cC > cB)
+					{
+						escreva("O candidato C ganhou a eleição com: ", cC, " votos!")
+					}
+		}
+		senao 
+		{
+			escreva("A votação está incorreta!")	
+		}
+
+		
+	}
+}
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta seção do arquivo guarda informações do Portugol Studio.
+ * Você pode apagá-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 836; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = ;
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */
